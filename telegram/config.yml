@@ -1,0 +1,9 @@
+telegram_access_token: bot_token
+host_url: https://d.sami-znaete-kto.ru
+local_database_name: coco.sqlite
+host_username: bot
+host_password: password
+api_map:
+  create_user: /api/admin/user/
+  authorize: /api/user/login
+  share_dataset: /api/dataset/1/share
