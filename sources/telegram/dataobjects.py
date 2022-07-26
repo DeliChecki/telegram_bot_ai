@@ -1,5 +1,6 @@
-from sqlmodel import SQLModel, Field
-from typing import Union, Optional
+from typing import Optional, Union
+
+from sqlmodel import Field, SQLModel
 
 
 # create class User with id, telegram_id, login and password
