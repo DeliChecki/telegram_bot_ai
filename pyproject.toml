@@ -3,6 +3,7 @@ name = "telegram_bot_ai"
 version = "0.0.0" # FIXME: Укажи свою версию здесь.
 description = "" # FIXME: Укажи сове описание здесь.
 authors = ["Ar4ikov <bizy18588@gmail.com>"]
+maintainers = ["amayakasa <contact@amayakasa.xyz>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
