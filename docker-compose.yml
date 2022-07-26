@@ -1,6 +1,7 @@
 version: '3'
 services:
   coco-telegram:
-    build: .
+    image: delichecki.ru/coco-telegram:latest
+    container_name: coco-telegram
     volumes:
       - .:/bot
