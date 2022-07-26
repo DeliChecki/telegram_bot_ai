@@ -5,10 +5,10 @@ IMAGE_NAME = delichecki.ru/coco-telegram
 DOCKERFILE = Dockerfile
 
 tag = 1.0.0
-IMAGE = ${IMAGE_NAME}:${tag}
+IMAGE = $(IMAGE_NAME):$(tag)
 
 build:
-    @docker build -f ${DOCKERFILE} -t ${IMAGE} .
+    @docker build -f $(DOCKERFILE) -t $(IMAGE) .
 
 run:
     @docker-compose up -d
