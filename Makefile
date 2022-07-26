@@ -11,17 +11,17 @@ IMAGE = $(IMAGE_NAME):$(tag)
 all: build
 
 analysis: ## Анализирует исходный код.
-	@poetry run black src --check --diff
-	@poetry run flake8 src
-	@poetry run isort src --check
+	@poetry run black sources --check --diff
+	@poetry run flake8 sources
+	@poetry run isort sources --check
 
 build: ## Собирает образ контейнера.
 	@docker build -f $(DOCKERFILE) -t $(IMAGE) .
 
 format: ## Форматирует исходный код.
-	@poetry run autoflake --recursive --remove-unused-variables --remove-all-unused-imports src
-	@poetry run black src
-	@poetry run isort src
+	@poetry run autoflake --recursive --remove-unused-variables --remove-all-unused-imports sources
+	@poetry run black sources
+	@poetry run isort sources
 
 githooks: ## Устанавливает хуки из конфигурации (.pre-commit-config.yaml).
 	@poetry run pre-commit install --hook-type=pre-commit --hook-type=pre-push
