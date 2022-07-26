@@ -128,7 +128,8 @@ class CocoServerUtils:
 class CocoTelegram:
     def __init__(self):
         # abs_path to current file
-        self.config_abs_path = os.path.join(os.path.dirname(__file__), "config.yml")
+        self.config_abs_path = os.path.join(os.path.dirname(__file__),
+                                            "config.yml")
 
         # read config
         with open(self.config_abs_path, 'r') as config_file:
