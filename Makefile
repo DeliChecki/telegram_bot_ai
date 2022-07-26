@@ -1,7 +1,7 @@
 .ONESHELL: ## Запуск всех команд в одной оболочке.
 .PHONY: all, analysis, build, format, githooks, pull, push, requirements, tests
 
-IMAGE_NAME = delicheki.io/bot/telegram-bot-ai
+IMAGE_NAME = delichecki.ru/coco-telegram
 DOCKERFILE = Dockerfile
 
 tag = $(shell poetry version --short)
