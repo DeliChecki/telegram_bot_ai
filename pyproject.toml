@@ -12,6 +12,28 @@ PyYAML = "^6.0"
 sqlmodel = "^0.0.6"
 requests = "^2.28.1"
 
+[tool.poetry.dev-dependencies]
+autoflake = "^1.4"
+black = { version = "^22.6.0", allow-prereleases = true }
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+
+[tool.black]
+line-length = 79
+target-version = ["py39"]
+preview = true
+
+[tool.flake8]
+max-line-length = 79
+
+[tool.isort]
+py_version = 39
+force_grid_wrap = 0
+include_trailing_comma = true
+line_length = 79
+multi_line_output = 3
+use_parentheses = true
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
